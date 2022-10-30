@@ -13,10 +13,10 @@
       <header class="header">
         <nav class="nav">
           <img
-            src="./images/logo.png"
+            src="images/logo.png"
             alt="Practicum Library Logo"
             class="logo"
-          />+
+          />
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
@@ -57,75 +57,63 @@
 
       <main class="content">
         <section id="staff-picks" class="staff">
-          <h2 class="staff__title">Staff picks</h2>
+          <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="staff__books">
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">Introduction to Algorithms</h3>
+                <h3 class="card__title">
+                  Do Androids Dream of Electric Sheep?
+                </h3>
                 <p class="card__text">
-                  The name of this book is self-explanatory; it's a proper
-                  introduction to algorithms! Introduction to Algorithms, or
-                  CLRS, in reference to the authors' last names, goes in-depth
-                  and covers a range of algorithms across several self-contained
-                  chapters.
+                  “You will be required to do wrong no matter where you go. It
+                  is the basic condition of life, to be required to violate your
+                  own identity. At some time, every creature which lives must do
+                  so. It is the ultimate shadow, the defeat of creation; this is
+                  the curse at work, the curse that feeds on all life.
+                  Everywhere in the universe.”
                 </p>
-                <p class="card__footer">
-                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                  Clifford Stein
-                </p>
+                <p class="card__footer">Philip K. Dick</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  The Structure and Interpretation of Computer Programs (SICP)
-                </h3>
+                <h3 class="card__title">Dune</h3>
                 <p class="card__text">
-                  This is one of the best books for learning the fundamentals of
-                  programming. Featured by MIT in one of their foundational
-                  programming courses, SICP is a general-purpose programming
-                  book that uses Scheme to illustrate various programming
-                  concepts.
+                  “Once men turned their thinking over to machines in the hope
+                  that this would set them free. But that only permitted other
+                  men with machines to enslave them.”
                 </p>
-                <p class="card__footer">
-                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
-                </p>
+                <p class="card__footer">Frank Herbert</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  The Clean Coder: A Code of Conduct for Professional
-                  Programmers
-                </h3>
+                <h3 class="card__title">Seveneves</h3>
                 <p class="card__text">
-                  Compiled by seasoned software engineer and author Robert C.
-                  Martin (also known as Uncle Bob), this book covers the
-                  techniques and tools of true software craftsmanship. It
-                  explains how to write clean code and demonstrates how to
-                  cultivate the attitude of a skilled, professional programmer.
+                  “But this was how the mind worked. The mind couldn't think
+                  about the End of the World all the time. It needed the
+                  occasional break, a romp through the trivial. Because it was
+                  through trivia that the mind was anchored in reality, as the
+                  largest oak tree was rooted, ultimately, in a system of
+                  rootlets no larger than the silver hairs on the president's
+                  head.”
                 </p>
-                <p class="card__footer">Steve McConnell</p>
+                <p class="card__footer">Neal Stephenson</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  Code Complete: A Practical Handbook of Software Construction
-                </h3>
+                <h3 class="card__title">A Song of Ice and Fire</h3>
                 <p class="card__text">
-                  Want to know how to write robust code irrespective of the
-                  architecture behind your chosen programming language? Then
-                  consider reading Code Complete: A Practical Handbook of
-                  Software Construction. It comprehensively covers everything
-                  related to good code structure.
+                  “Never forget what you are, for surely the world will not.
+                  Make it your strength. Then it can never be your weakness.”
                 </p>
-                <p class="card__footer">Steve McConnell</p>
+                <p class="card__footer">George R.R. Martin</p>
               </div>
             </li>
           </ul>
@@ -168,48 +156,47 @@
               alt="picture of a library"
               class="events__image"
             />
+            <div class="person person_name_feynman">
+              <p class="person__caption">Joan Feynman</p>
+              <img
+                src="images/person_feynman.png"
+                alt="photograph of Feynman"
+                class="person__image person__image_size_l"
+              />
+            </div>
+            <div class="person person_name_tarter">
+              <p class="person__caption">Jill Tarter</p>
+              <img
+                src="images/person_tarter.png"
+                alt="photograph of Tarter"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                src="images/person_burbidge.png"
+                alt="photograph of Burbidge"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_mitchell">
+              <img
+                src="images/person_mitchell.png"
+                alt="photograph of Mitchell"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+            </div>
+            <div class="person person_name_cannon">
+              <img
+                src="images/person_cannon.png"
+                alt="photograph of Cannon"
+                class="person__image person__image_size_m"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
+            </div>
           </div>
-          <div class="person person_name_feynman">
-            <p class="person__caption">Joan Feynman</p>
-            <img
-              src="images/person_feynman.png"
-              alt="photograph of Feynman"
-              class="person__image person__image_size_l"
-            />
-          </div>
-          <div class="person person_name_tarter">
-            <p class="person__caption">Jill Tarter</p>
-            <img
-              src="images/person_tarter.png"
-              alt="photograph of Tarter"
-              class="person__image person__image_size_m"
-            />
-          </div>
-          <div class="person person_name_burbidge">
-            <p class="person__caption">Margaret Burbidge</p>
-            <img
-              src="images/person_burbidge.png"
-              alt="photograph of Burbidge"
-              class="person__image person__image_size_m"
-            />
-          </div>
-          <div class="person person_name_mitchell">
-            <img
-              src="images/person_mitchell.png"
-              alt="photograph of Mitchell"
-              class="person__image person__image_size_s"
-            />
-            <p class="person__caption">Maria Mitchell</p>
-          </div>
-          <div class="person person_name_cannon">
-            <img
-              src="images/person_cannon.png"
-              alt="photograph of Cannon"
-              class="person__image person__image_size_s"
-            />
-            <p class="person__caption">Annie Jump Cannon</p>
-          </div>
-          <!-- Start creating the composition here -->
         </section>
 
         <section id="become-a-member" class="membership">
@@ -288,11 +275,50 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
       <footer id="footer" class="footer">
-        <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="images/logo_practicum.svg"
+              alt="practicum logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h2 class="footer__column-heading">Hours</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__column-heading">Social media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#"
+                  ><img
+                    class="footer__social-icon"
+                    src="images/facebook_white.svg"
+                    alt="facebook logo"
+                /></a>
+                Facebook
+              </li>
+              <li class="footer__list-item">
+                <a href="#"
+                  ><img
+                    class="footer__social-icon"
+                    src="images/instagram_white.svg"
+                    alt="instagram logo"
+                /></a>
+                Instagram
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">&copy;2022 Jason Correa</div>
       </footer>
     </div>
   </body>
